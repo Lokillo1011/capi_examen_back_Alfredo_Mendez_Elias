@@ -1,0 +1,14 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Model;
+
+class UserDomicilio extends Model
+{
+    protected $table = 'user_domicilio';
+    protected $fillable = ['user_id', 'domicilio', 'numero_exterior', 'colonia', 'cp', 'ciudad', 'fecha_nacimiento'];
+    protected $primaryKey = 'user_id';
+    use HasFactory;
+}
